@@ -1,4 +1,3 @@
-
 import os
 from pdf2image import convert_from_path
 import pytesseract
@@ -37,7 +36,7 @@ def convert_pdf_to_text(pdf_path, output_txt_path, poppler_path=None):
         raise RuntimeError(f"Error writing to output file: {e}")
 
 
-if __name__ == "_main_":
+if _name_ == "main":
     pdf_path = r"C:\\Users\\Yuvayash\\Downloads\\numbers image .pdf"
     output_txt_path = r"C:\\Users\\Yuvayash\\OneDrive\\Desktop\\New Text Document.txt"
     poppler_path = r"C:\\Users\\Yuvayash\\Downloads\\poppler-24.08.0\\Library\\bin"
